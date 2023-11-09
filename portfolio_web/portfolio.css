@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box; 
+    font-family: sans-serif;  
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: #F3C3B0;
+    display: flex;
+    justify-content: center;
+    align-items: centre;
+
+} 
+
+.container .box {
+    height: 86vh; 
+    width: 75%; 
+    padding: 0 20px; 
+    background-color: rgba(255, 255, 255, 0.1);
+    z-index: 10;
+    border: 2px solid rgba(255, 255, 255, 0.7); 
+    border-radius: 20px;
+    display: flex;
+    backdrop-filter: blur (25px);
+    box-shadow: -15px 17px 17px rgba(red, green, blue, alpha);
+} 
+
+.container nav {
+        height: 7%;
+        width: 70%;
+        position: absolute;
+        align-items: center;
+        display: flex;
+        justify-content: space-between; 
+        margin: 15px auto; 
+        padding: 20px;
+    }
+
+    .container .logo {
+        font-size: 32px;
+        font-weight: 700;
+        text-decoration: none; 
+        color : whitesmoke;
+        margin-left: 30px;
+    } 
+
+    .container .logo::first-letter{
+        color: #fe3474;
+        font-size: 35px;
+    }
+
+ .container nav ul li {
+    display: inline-block ;
+    padding: 0 20px;
+ } 
+
+ .container nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #000;
+    transition: 0.3s;
+ }
+
+ .container nav ul li a:hover {
+    color: rgb(0, 89, 255);
+ }
+
+ .content {
+    position: relative; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%;
+    margin-top: 8%;
+    padding-left: 80px;
+ }
+
+.content .part1 {
+    position: relative;
+    width: 40%;
+}
+
+ .content .part1 h1 {
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-weight: 700;
+    color: #000;
+ }
+ 
+ .content .part1 h3 {
+    font-size: 24px;
+    color: #6f34fe ;
+    margin-bottom: 10px;
+ } 
+
+ .content .part1 p {
+    font-size: 15px;
+    color:  #505052;
+    margin-bottom: 50px;
+ } 
+ .content .button {
+    padding: 15px 20px;
+    border-radius: 5px;
+    background-color: #E6896B;
+    border: 3px solid #E6896B;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.3s;
+    color : #fff;
+ } 
+  .content .button:hover {
+    background-color: #fff;
+    color : #c64b23
+  }
+
+.content .part2 {
+    width: 60%;
+    position :relative;
+    
+  }
+.content .part2:hover {
+    transform: rotate (45 deg);
+    transition-timing-function: ease-in;
+}
+   
+
+
+
+
+.content .social {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: absolute;
+    left: 2%;
+    top: 30%;
+
+}
+
+.content .social a i {
+    font-size: 25px;
+    color: #7c8bd1;
+    transition: 0.3s;
+
+}
+
+.content .social i:hover {
+    color: #6f34fe;
+}
